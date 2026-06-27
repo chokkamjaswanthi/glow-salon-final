@@ -31,7 +31,7 @@ function Register() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/users/register",
+        "https://glow-salon-final-xftu.vercel.app/api/users/register",
         {
           name: form.name,
           email: form.email,

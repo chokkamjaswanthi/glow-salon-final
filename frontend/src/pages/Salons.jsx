@@ -21,7 +21,7 @@ function Salons() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/business"
+        "https://glow-salon-final-xftu.vercel.app/api/business"
       );
 
       setSalons(res.data);

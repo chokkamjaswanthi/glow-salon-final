@@ -26,7 +26,7 @@ function BusinessLogin() {
     try {
 
       const res = await axios.post(
-        "http://localhost:5000/api/business/login",
+        "https://glow-salon-final-xftu.vercel.app/api/business/login",
         form
       );
 
@@ -39,6 +39,8 @@ function BusinessLogin() {
       navigate("/business-dashboard");
 
     } catch (error) {
+
+      console.log(error);
 
       alert("Invalid Email or Password");
 

@@ -27,7 +27,7 @@ function BusinessRegister() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/business/register",
+        "https://glow-salon-final-xftu.vercel.app/api/business/register",
         form
       );
 
@@ -43,6 +43,8 @@ function BusinessRegister() {
       });
 
     } catch (error) {
+
+      console.log(error);
 
       alert("Registration Failed");
 

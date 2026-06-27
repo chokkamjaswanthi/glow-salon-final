@@ -23,7 +23,7 @@ function History() {
         }
 
         const res = await axios.get(
-          `http://localhost:5000/api/appointments?email=${userEmail}`
+          `https://glow-salon-final-xftu.vercel.app/api/appointments?email=${userEmail}`
         );
 
         setAppointments(res.data);
@@ -45,6 +45,7 @@ function History() {
   }, []);
 
   return (
+
     <>
       <Navbar />
 
@@ -67,11 +68,13 @@ function History() {
             <thead>
 
               <tr>
+
                 <th>Name</th>
                 <th>Email</th>
                 <th>Phone</th>
                 <th>Service</th>
                 <th>Date</th>
+
               </tr>
 
             </thead>
@@ -81,11 +84,13 @@ function History() {
               {appointments.map((item) => (
 
                 <tr key={item._id}>
+
                   <td>{item.name}</td>
                   <td>{item.email}</td>
                   <td>{item.phone}</td>
                   <td>{item.service}</td>
                   <td>{item.date}</td>
+
                 </tr>
 
               ))}
@@ -99,6 +104,7 @@ function History() {
       </div>
 
     </>
+
   );
 
 }

@@ -19,7 +19,7 @@ function BusinessHistory() {
       const businessId = localStorage.getItem("businessId");
 
       const res = await axios.get(
-        `http://localhost:5000/api/appointments/history/${businessId}`
+        `https://glow-salon-final-xftu.vercel.app/api/appointments/history/${businessId}`
       );
 
       setAppointments(res.data);
@@ -78,7 +78,7 @@ function BusinessHistory() {
 
                 {
 
-                  appointments.map((item)=>(
+                  appointments.map((item) => (
 
                     <tr key={item._id}>
 

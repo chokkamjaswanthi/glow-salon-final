@@ -17,7 +17,7 @@ function BusinessBookings() {
       const businessId = localStorage.getItem("businessId");
 
       const res = await axios.get(
-        `http://localhost:5000/api/appointments?businessId=${businessId}`
+        `https://glow-salon-final-xftu.vercel.app/api/appointments?businessId=${businessId}`
       );
 
       setAppointments(res.data);
@@ -35,7 +35,7 @@ function BusinessBookings() {
     try {
 
       await axios.put(
-        `http://localhost:5000/api/appointments/${id}`,
+        `https://glow-salon-final-xftu.vercel.app/api/appointments/${id}`,
         { status }
       );
 
@@ -56,7 +56,7 @@ function BusinessBookings() {
     try {
 
       await axios.delete(
-        `http://localhost:5000/api/appointments/${id}`
+        `https://glow-salon-final-xftu.vercel.app/api/appointments/${id}`
       );
 
       loadBookings();
@@ -109,19 +109,13 @@ function BusinessBookings() {
                 <tr key={item._id}>
 
                   <td>{item.name}</td>
-
                   <td>{item.email}</td>
-
                   <td>{item.phone}</td>
-
                   <td>{item.service}</td>
-
                   <td>{item.date}</td>
 
                   <td>
-
                     <strong>{item.status || "Pending"}</strong>
-
                   </td>
 
                   <td>
