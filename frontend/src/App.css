@@ -1,0 +1,766 @@
+body{
+
+margin:0;
+
+font-family:Arial,sans-serif;
+
+}
+
+.navbar{
+
+background:#f062a7;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 50px;
+
+}
+
+
+.logo{
+
+color:white;
+
+font-size:40px;
+
+font-weight:bold;
+
+}
+
+.nav-links{
+
+display:flex;
+
+list-style:none;
+
+gap:30px;
+
+}
+
+.nav-links a{
+
+text-decoration:none;
+
+color:white;
+
+font-size:20px;
+
+font-weight:500;
+
+}
+
+.hero{
+
+height:90vh;
+
+background-image:
+linear-gradient(
+rgba(0,0,0,0.4),
+rgba(0,0,0,0.4)
+),
+
+url("./images/salon.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+.hero-content{
+
+color:white;
+
+}
+
+.hero-content p{
+
+font-size:28px;
+
+}
+
+.hero-content button{
+
+padding:15px 35px;
+
+background:#f062a7;
+
+color:white;
+
+border:none;
+
+border-radius:30px;
+
+font-size:18px;
+
+cursor:pointer;
+
+}
+
+.footer{
+
+background:#f062a7;
+
+color:white;
+
+text-align:center;
+
+padding:20px;
+
+font-size:18px;
+
+margin-top:50px;
+
+}
+
+.appointment{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+padding:50px;
+
+}
+
+.appointment h1{
+
+font-size:50px;
+
+margin-bottom:30px;
+
+}
+
+.appointment form{
+
+display:flex;
+
+flex-direction:column;
+
+width:400px;
+
+gap:20px;
+
+}
+
+.appointment input,
+
+.appointment select{
+
+padding:15px;
+
+font-size:18px;
+
+border:1px solid #ccc;
+
+border-radius:10px;
+
+}
+
+.appointment button{
+
+padding:15px;
+
+background:#f062a7;
+
+color:white;
+
+border:none;
+
+border-radius:30px;
+
+font-size:20px;
+
+cursor:pointer;
+
+}
+
+.appointment button:hover{
+
+opacity:0.9;
+
+}
+
+.about{
+
+text-align:center;
+
+padding:80px 100px;
+
+}
+
+.about h1{
+
+font-size:60px;
+
+margin-bottom:40px;
+
+}
+
+.about p{
+
+font-size:28px;
+
+line-height:1.8;
+
+max-width:1100px;
+
+margin:auto;
+
+}
+
+.contact{
+
+text-align:center;
+
+padding:80px;
+
+}
+
+.contact h1{
+
+font-size:50px;
+
+margin-bottom:30px;
+
+}
+
+.contact p{
+
+font-size:24px;
+
+margin:20px 0;
+
+}
+
+.services{
+
+text-align:center;
+
+padding:50px;
+
+}
+
+.services h1{
+
+font-size:50px;
+
+margin-bottom:50px;
+
+}
+
+.service-box{
+
+width:250px;
+
+display:inline-block;
+
+padding:40px;
+
+margin:20px;
+
+background:white;
+
+border-radius:20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+.service-box h2{
+
+font-size:35px;
+
+}
+
+.service-box p{
+
+font-size:25px;
+
+}
+
+.gallery{
+
+display:flex;
+
+justify-content:center;
+
+gap:30px;
+
+padding:50px;
+
+flex-wrap:wrap;
+
+}
+
+.gallery img{
+
+width:300px;
+
+height:250px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+transition:0.3s;
+
+}
+
+.gallery img:hover{
+
+transform:scale(1.05);
+
+}
+
+.admin{
+  padding:60px;
+  text-align:center;
+}
+
+.admin table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:30px;
+}
+
+.admin th,
+.admin td{
+  border:1px solid #ddd;
+  padding:15px;
+}
+
+.admin th{
+  background:#e754a5;
+  color:white;
+}
+
+.admin tr:nth-child(even){
+  background:#f8f8f8;
+}
+
+/* ===========================
+      USER REGISTRATION
+=========================== */
+
+.register{
+
+    min-height:calc(100vh - 100px);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#fff7fb,#ffe6f2,#fff0f8);
+
+    padding:60px 20px;
+
+}
+
+.register-box{
+
+    width:400px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:28px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    animation:fadeUp .7s ease;
+
+}
+
+.register-box h1{
+
+    text-align:center;
+
+    color:#e754a5;
+
+    font-size:38px;
+
+    margin-bottom:8px;
+
+}
+
+.register-box p{
+
+    text-align:center;
+
+    color:gray;
+
+    margin-bottom:30px;
+
+}
+
+.register-box form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.register-box input{
+
+    padding:16px;
+
+    border:1px solid #ddd;
+
+    border-radius:12px;
+
+    font-size:17px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.register-box input:focus{
+
+    border-color:#e754a5;
+
+    box-shadow:0 0 12px rgba(231,84,165,.25);
+
+}
+
+.register-box button{
+
+    background:#e754a5;
+
+    color:white;
+
+    border:none;
+
+    padding:16px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.register-box button:hover{
+
+    background:#cf3f92;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(231,84,165,.3);
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:600px){
+
+.register-box{
+
+width:100%;
+
+padding:25px;
+
+}
+
+.register-box h1{
+
+font-size:30px;
+
+}
+
+}
+
+.login-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#fff5fb,#ffe4f2);
+}
+
+.login-box{
+    width:420px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.login-box h1{
+    color:#e754a5;
+    margin-bottom:10px;
+    font-size:42px;
+}
+
+.login-box p{
+    color:#777;
+    margin-bottom:25px;
+}
+
+.login-box form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.login-box input{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    outline:none;
+    transition:.3s;
+}
+
+.login-box input:focus{
+    border:2px solid #e754a5;
+    box-shadow:0 0 10px rgba(231,84,165,.3);
+}
+
+.login-box button{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#e754a5;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-box button:hover{
+    background:#d93d92;
+    transform:translateY(-3px);
+}
+
+.register-link{
+    margin-top:20px;
+}
+
+.register-link a{
+    color:#e754a5;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.register-link a:hover{
+    text-decoration:underline;
+}
+
+/* Dashboard */
+
+.dashboard{
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:linear-gradient(135deg,#fff7fb,#ffe4f2);
+
+}
+
+.dashboard-box{
+
+width:500px;
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+text-align:center;
+
+}
+
+.dashboard-box h1{
+
+color:#e754a5;
+
+margin-bottom:15px;
+
+}
+
+.dashboard-box p{
+
+margin-bottom:30px;
+
+color:#666;
+
+}
+
+.dashboard-box button{
+
+width:100%;
+
+padding:15px;
+
+margin-top:15px;
+
+border:none;
+
+border-radius:10px;
+
+background:#e754a5;
+
+color:white;
+
+font-size:18px;
+
+cursor:pointer;
+
+transition:.3s;
+
+}
+
+.dashboard-box button:hover{
+
+background:#d63f8f;
+
+}
+
+.logout-btn{
+
+    float:right;
+
+    background:#ff4d6d;
+
+    color:white;
+
+    padding:12px 28px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    margin-bottom:20px;
+
+}
+
+.logout-btn:hover{
+
+    background:#d90429;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 8px 18px rgba(0,0,0,.25);
+
+}
+
+.login-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#fff5fa;
+}
+
+.login-box{
+    width:400px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    text-align:center;
+}
+
+.login-box h1{
+    color:#e754a5;
+    margin-bottom:10px;
+}
+
+.login-box p{
+    color:#666;
+    margin-bottom:25px;
+}
+
+.login-box form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.login-box input{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.login-box button{
+    padding:15px;
+    background:#e754a5;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.login-box button:hover{
+    background:#d63f8f;
+}
